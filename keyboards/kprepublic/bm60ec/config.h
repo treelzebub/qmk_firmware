@@ -39,6 +39,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  * ROWS: AVR pins used for rows, top to bottom
  * DIODE_DIRECTION: COL2ROW = COL = Anode (+), ROW = Cathode (-, marked on diode)
  *                  ROW2COL = ROW = Anode (+), COL = Cathode (-, marked on diode)
+ *
  */
 
 //                         0   1   2   3   4   5   6   7   8   9   A   B   C   D
@@ -50,14 +51,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define RGB_DI_PIN E2
 #define DRIVER_LED_TOTAL 69
 #ifdef RGB_DI_PIN
-#    define RGBLED_NUM 69
-#    define RGB_MATRIX_KEYPRESSES
-#    define RGBLIGHT_LIMIT_VAL 180 // Limit to vendor-recommended value
-#endif
-#ifdef RGB_MATRIX_ENABLE
-#    define RGB_MATRIX_MAXIMUM_BRIGHTNESS 180 // Limit to vendor-recommended value
+    #define RGBLED_NUM 69
+    #define RGB_MATRIX_KEYPRESSES
 #endif
 
-// Encodertown
-#define ENCODERS_PAD_A { B12 }
-#define ENCODER_RESOLUTION 4
+#define ENCODERS_PAD_A { F5 }
+#define ENCODERS_PAD_B { F6 }
