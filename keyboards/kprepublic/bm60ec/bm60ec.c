@@ -50,6 +50,6 @@ led_config_t g_led_config = { {
 } };
 
 // Called if keymap.c encoder_update_user returns true.
-bool encoder_update_kb(uint8t index, bool clockwise) {
+bool encoder_update_kb(uint8_t index, bool clockwise) {
     return false;
 }
